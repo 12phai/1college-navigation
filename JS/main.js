@@ -97,7 +97,7 @@ document.getElementById('find-route-btn').addEventListener('click', function() {
                 window.location.href = 'assets/images/Gate3 to Sports-Room.html';
                 break;
             case 'Playground':
-                window.location.href = 'assets/images/Gate3 to playground.html';
+                window.location.href = 'assets/images/Gate3 to Playground.html';
                 break;
             case 'Basketball_Court':
                 window.location.href = 'assets/images/Gate3 to Basketball_Court.html';
