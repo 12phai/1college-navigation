@@ -21,7 +21,7 @@ document.getElementById('find-route-btn').addEventListener('click', function() {
                 window.location.href = 'assets/images/Gate5 to D-BLOCK.html';
                 break;
             case 'Basketball_Court':
-                window.location.href = 'assets/images/Gate5 to Basketball_court.html';
+                window.location.href = 'assets/images/Gate5 to Basketball_Court.html';
                 break;
             case 'Boys-Hostel':
                 window.location.href = 'assets/images/Gate5 to Boys-Hostel.html';
