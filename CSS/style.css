@@ -7,8 +7,8 @@ body {
 }
 
 header {
-    background-color: white;
-    color: #333; /* Changed to dark color for better contrast */
+    background-color: #3498db;
+    color: #fff;
     text-align: center;
     padding: 10px;
 }
@@ -32,19 +32,32 @@ img {
 }
 
 #start-end-points {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    margin-top: 20px;
+    text-align: center;
 }
 
-#start-point,
-#end-point {
+label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: #3498db;
-    color: #fff;
+    color: white;
     padding: 5px;
+    border: none;
     border-radius: 5px;
+    font-size: 14px;
     margin: 5px;
-    font-size: 12px;
+    outline: none;
+    text-align: center;
+}
+
+select option {
+    display: block;
 }
 
 #find-route-btn {
@@ -54,78 +67,39 @@ img {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 #find-route-btn:hover {
     background-color: #27ae60;
 }
 
-/* Dropdown styles */
-.autocomplete-items {
-    border: 1px solid #ccc;
-    max-height: 150px;
-    overflow-y: auto;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    background-color: #fff; /* Changed to white for better visibility */
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.autocomplete-item {
-    padding: 8px;
-    cursor: pointer;
-    color: #333; /* Changed to dark text for better contrast */
-    background-color: #f9f9f9; /* Light gray background for options */
-}
-
-.autocomplete-item:hover,
-.autocomplete-active {
-    background-color: #3498db; /* Highlight color on hover or active */
-    color: #fff;
-}
-
-#route-map {
-    margin: 20px 0 20px auto;
-    display: block;
-}
-
 /* Responsive styles for smaller screens (e.g., phones) */
 @media (max-width: 768px) {
     img {
-        max-width: 80%; /* Adjust image size for smaller screens */
+        max-width: 80%;
     }
 
-    #start-end-points {
-        top: 10px;
-        left: 10px;
-    }
-
-    #start-point,
-    #end-point {
-        font-size: 10px; /* Smaller font size for dropdowns */
+    select {
+        font-size: 12px;
     }
 
     #find-route-btn {
-        padding: 8px; /* Smaller padding for the button */
+        padding: 8px;
     }
 }
 
 @media (max-width: 480px) {
     img {
-        max-width: 90%; /* Further reduce image size for very small screens */
+        max-width: 90%;
     }
 
     #start-end-points {
-        position: relative; /* Make it flow within the layout */
-        top: 0;
-        left: 0;
         text-align: center;
         margin-bottom: 10px;
     }
 
     #find-route-btn {
-        width: 100%; /* Button takes the full width */
+        width: 100%;
     }
 }
