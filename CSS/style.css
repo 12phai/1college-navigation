@@ -8,7 +8,7 @@ body {
 
 header {
     background-color: white;
-    color: #fff;
+    color: #333; /* Changed to dark color for better contrast */
     text-align: center;
     padding: 10px;
 }
@@ -60,12 +60,7 @@ img {
     background-color: #27ae60;
 }
 
-.autocomplete-item:hover,
-.autocomplete-active {
-    background-color: #3498db;
-    color: #fff;
-}
-
+/* Dropdown styles */
 .autocomplete-items {
     border: 1px solid #ccc;
     max-height: 150px;
@@ -73,13 +68,22 @@ img {
     position: absolute;
     z-index: 1;
     width: 100%;
-    background-color: #3b3939;
+    background-color: #fff; /* Changed to white for better visibility */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .autocomplete-item {
     padding: 8px;
     cursor: pointer;
-    color: #000;
+    color: #333; /* Changed to dark text for better contrast */
+    background-color: #f9f9f9; /* Light gray background for options */
+}
+
+.autocomplete-item:hover,
+.autocomplete-active {
+    background-color: #3498db; /* Highlight color on hover or active */
+    color: #fff;
 }
 
 #route-map {
