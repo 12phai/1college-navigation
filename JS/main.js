@@ -37,7 +37,7 @@ document.getElementById('find-route-btn').addEventListener('click', function() {
                 case 'Girls-Hostel': routePage = 'assets/images/Gate3 to Girls-Hostel.html'; break;
                 case 'Hut': routePage = 'assets/images/Gate3 to Hut.html'; break;
                 case 'Sports-Room': routePage = 'assets/images/Gate3 to Sports-Room.html'; break;
-                case 'Playground': routePage = 'assets/images/Gate3 to playground.html'; break;
+                case 'Playground': routePage = 'assets/images/Gate3 to Playground.html'; break;
                 case 'Basketball_Court': routePage = 'assets/images/Gate3 to Basketball_Court.html'; break;
                 case 'Gate-5': routePage = 'assets/images/Gate3 to Gate5.html'; break;
                 default: alert('Route information not available for the selected end location.'); return;
