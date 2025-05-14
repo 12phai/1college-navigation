@@ -1,3 +1,4 @@
+/* Default styles for larger screens (e.g., laptops/desktops) */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,10 +8,8 @@ body {
 
 header {
     background-color: white;
-    color: #fff;
     text-align: center;
     padding: 10px;
-    
 }
 
 main {
@@ -19,23 +18,25 @@ main {
 
 #map-container {
     position: relative;
-    margin: 0 auto; /* Centers the container */
-    text-align: center; /* Ensures the image is centered */
+    margin: 0 auto;
+    text-align: center;
 }
 
 img {
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Centers the image */
-    border-radius:10px;
-    
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 #start-end-points {
     position: absolute;
     top: 20px;
     left: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #start-point,
@@ -48,6 +49,16 @@ img {
     font-size: 12px;
 }
 
+#start-input, #end-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 14px;
+    width: 150px;
+    cursor: pointer;
+}
+
 #find-route-btn {
     background-color: #2ecc71;
     color: #fff;
@@ -55,6 +66,8 @@ img {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
 }
 
 #find-route-btn:hover {
@@ -74,22 +87,87 @@ img {
     position: absolute;
     z-index: 1;
     width: 100%;
-    background-color: #3b3939;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .autocomplete-item {
-    padding: 8px;
+    padding: 10px;
     cursor: pointer;
     color: #000;
+    font-size: 14px;
 }
 
-.autocomplete-item:hover,
-.autocomplete-active {
-    background-color: #3498db;
-    color: #fff;
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #444;
+}
+
+.dark-mode #find-route-btn {
+    background-color: #555;
+    color: white;
+}
+
+.dark-mode #find-route-btn:hover {
+    background-color: #777;
 }
 
 #route-map {
-    margin: 20px 0 20px auto;
+    margin: 20px 0;
     display: block;
+}
+
+/* Glow effect for selected path */
+.highlighted-path {
+    stroke: yellow;
+    stroke-width: 5px;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { stroke-opacity: 0.5; }
+    to { stroke-opacity: 1; }
+}
+
+/* Responsive styles for smaller screens (e.g., phones) */
+@media (max-width: 768px) {
+    img {
+        max-width: 80%; /* Adjust image size for smaller screens */
+    }
+
+    #start-end-points {
+        top: 10px;
+        left: 10px;
+    }
+
+    #start-point,
+    #end-point {
+        font-size: 10px; /* Smaller font size for dropdowns */
+    }
+
+    #find-route-btn {
+        padding: 8px; /* Smaller padding for the button */
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        max-width: 90%; /* Further reduce image size for very small screens */
+    }
+
+    #start-end-points {
+        position: relative; /* Make it flow within the layout */
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #find-route-btn {
+        width: 100%; /* Button takes the full width */
+    }
 }

@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+
+    
+
     <title>College Navigation</title>
 </head>
 <body>
@@ -15,11 +19,16 @@
     <main>
         <div id="map-container">
             <img src="assets/images/page.png" alt="Campus Map">
+            <div id="result"></div>
+
             <div id="start-end-points">
                 <div id="start-point">
                     <label for="start-input">Start Point:</label>
                     <select id="start-input">
+                        <option value="Gate-1">Gate 1</option>
+                        <option value="Gate-2">Gate 2</option>
                         <option value="Gate-3">Gate 3</option>
+                        <option value="Gate-4">Gate 4</option>
                         <option value="Gate-5">Gate 5</option>
                         
                     </select>
@@ -27,7 +36,10 @@
                 <div id="end-point">
                     <label for="end-input">End Point:</label>
                     <select id="end-input">
+                        <option value="Gate-1">Gate-1</option>
+                        <option value="Gate-2">Gate-2</option>
                         <option value="Gate-3">Gate-3</option>
+                        <option value="Gate-4">Gate-4</option>
                         <option value="Gate-5">Gate-5</option>
                         <option value="Hut">Hut</option>
                         <option value="A-BLOCK">A-BLOCK</option>
@@ -49,7 +61,10 @@
             </div>
         </div>
     </main>
+    
+    
+    
 
-    <script src="js/main.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 </html>
