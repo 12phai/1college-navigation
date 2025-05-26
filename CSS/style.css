@@ -98,7 +98,6 @@ img {
     font-size: 14px;
 }
 
-<<<<<<< HEAD
 .dark-mode {
     background-color: #222;
     color: white;
@@ -117,14 +116,11 @@ img {
     background-color: #777;
 }
 
-=======
->>>>>>> 36798628c68e4b90ef1055d5dfa2b6e044212d72
 #route-map {
     margin: 20px 0;
     display: block;
 }
 
-<<<<<<< HEAD
 /* Glow effect for selected path */
 .highlighted-path {
     stroke: yellow;
@@ -137,8 +133,6 @@ img {
     to { stroke-opacity: 1; }
 }
 
-=======
->>>>>>> 36798628c68e4b90ef1055d5dfa2b6e044212d72
 /* Responsive styles for smaller screens (e.g., phones) */
 @media (max-width: 768px) {
     img {
@@ -177,7 +171,3 @@ img {
         width: 100%; /* Button takes the full width */
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 36798628c68e4b90ef1055d5dfa2b6e044212d72

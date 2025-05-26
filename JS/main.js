@@ -25,7 +25,7 @@ document.getElementById('find-route-btn').addEventListener('click', function () 
                 case 'Gate-1': routePage = 'assets/images/Gate5 to Gate1.html'; break;
                 case 'Gate-4': routePage = 'assets/images/Gate5 to Gate4.html'; break;
                 case 'Hut': routePage = 'assets/images/Gate5 to Hut.html'; break;
-                case 'Hot and Cool': routePage = 'assets/images/Gate5 to Hot and Cool.html'; break;
+                
                 case 'Upahar': routePage = 'assets/images/Gate5 to Upahar.html'; break;
                 default: alert('Route information not available for the selected end location.'); return;
             }
@@ -47,7 +47,7 @@ document.getElementById('find-route-btn').addEventListener('click', function () 
                 case 'Gate-4': routePage = 'assets/images/Gate3 to Gate4.html'; break;
                 case 'Gate-5': routePage = 'assets/images/Gate3 to Gate5.html'; break;
                 case 'Hut': routePage = 'assets/images/Gate3 to Hut.html'; break;
-                case 'Hot and Cool': routePage = 'assets/images/Gate3 to Hot and Cool.html'; break;
+                
                 case 'Upahar': routePage = 'assets/images/Gate3 to Upahar.html'; break;
                 default: alert('Route information not available for the selected end location.'); return;
             }
@@ -69,7 +69,7 @@ document.getElementById('find-route-btn').addEventListener('click', function () 
                 case 'Gate-1': routePage = 'assets/images/Gate4 to Gate1.html'; break;
                 case 'Gate-5': routePage = 'assets/images/Gate4 to Gate5.html'; break;
                 case 'Hut': routePage = 'assets/images/Gate4 to Hut.html'; break;
-                case 'Hot and Cool': routePage = 'assets/images/Gate4 to Hot and Cool.html'; break;
+                
                 case 'Upahar': routePage = 'assets/images/Gate4 to Upahar.html'; break;
                 default: alert('Route information not available for the selected end location.'); return;
             }
@@ -91,7 +91,7 @@ document.getElementById('find-route-btn').addEventListener('click', function () 
                 case 'Gate-4': routePage = 'assets/images/Gate1 to Gate4.html'; break;
                 case 'Gate-5': routePage = 'assets/images/Gate1 to Gate5.html'; break;
                 case 'Hut': routePage = 'assets/images/Gate1 to Hut.html'; break;
-                case 'Hot and Cool': routePage = 'assets/images/Gate1 to Hot and Cool.html'; break;
+                
                 case 'Upahar': routePage = 'assets/images/Gate1 to Upahar.html'; break;
                 default: alert('Route information not available for the selected end location.'); return;
             }
@@ -113,7 +113,7 @@ document.getElementById('find-route-btn').addEventListener('click', function () 
                 case 'Gate-4': routePage = 'assets/images/Gate2 to Gate4.html'; break;
                 case 'Gate-5': routePage = 'assets/images/Gate2 to Gate5.html'; break;
                 case 'Hut': routePage = 'assets/images/Gate2 to Hut.html'; break;
-                case 'Hot and Cool': routePage = 'assets/images/Gate2 to Hot and Cool.html'; break;
+                
                 case 'Upahar': routePage = 'assets/images/Gate2 to Upahar.html'; break;
                 default: alert('Route information not available for the selected end location.'); return;
             }
@@ -143,7 +143,6 @@ function speakDirections(start, end) {
             "Gate-3": "Start at Gate 4 and walk straight for 20 meters. Turn right and continue for another 20 meters. Take a left and walk for 20 meters, then turn right and walk for 30 meters. Turn left and proceed for 60 meters, then take a left and walk for 20 meters. Turn right and continue for 30 meters. Gate-3 will be ahead.",
             "Gate-2": "Start at Gate 4 and walk straight for 20 meters. Turn right and continue for another 20 meters. Take a left and walk for 20 meters, then turn right and walk for 30 meters. Turn left and proceed for 60 meters, then take a left and walk for 20 meters. Turn right and continue for 40 meters. Gate-2 will be ahead.",
             "Gate-1": "Start at Gate 4 and walk straight for 20 meters. Turn right and continue for another 20 meters. Take a left and walk for 20 meters, then turn right and walk for 30 meters. Turn left and proceed for 60 meters, then take a left and walk for 20 meters. Turn right and continue for 50 meters. Gate-1 will be ahead.",
-            "Hot and Cool": "Start at Gate 4 and walk straight for 20 meters. Turn right and continue for another 20 meters. Take a left and walk for 20 meters, then turn right and walk for 30 meters. Turn left and proceed for 70 meters. Walk straight for 5 meters, turn left, and continue for 10 meters. Turn right and walk for 5 meters. Hot and Cool will be ahead.",
             "Girls-Hostel": "Start at Gate 4 and walk straight for 20 meters. Turn right and continue for another 20 meters. Take a left and walk for 20 meters, then turn right and walk for 30 meters. Turn left and proceed for 70 meters. Walk straight for 5 meters, turn left, and continue for 50 meters. The Girls-Hostel will be ahead.",
             "Canteen": "Start at Gate 4 and walk straight for 20 meters. Turn right and continue for another 20 meters. Take a left and walk for 20 meters, then turn right and walk for 30 meters. Turn left and proceed for 70 meters. Walk straight for 5 meters, turn left, and continue for 5 meters. Turn right and walk for 5 meters. The Canteen will be ahead.",
             "Gate-5": "Start at Gate 4 and walk straight for 5 meters. Take a left and continue for 10 meters. Gate-5 will be on your left.",
@@ -171,7 +170,6 @@ function speakDirections(start, end) {
             "Basketball_Court": "Start at Gate 5 and walk straight for 10 meters. Turn right. The Basketball Court will be ahead.",
             "Playground": "Start at Gate 5 and walk straight for 20 meters. The Playground will be ahead.",
             "Canteen": "Start at Gate 5 and walk straight for 20 meters. Turn right and continue for another 20 meters. Take a left and walk for 80 meters. Turn right and walk for 10 meters. Turn left and continue for 10 meters. The Canteen will be on your right.",
-            "Hot and Cool": "Start at Gate 5 and walk straight for 20 meters. Turn right and continue for another 20 meters. Take a left and walk for 80 meters. Turn right and walk for 10 meters. Turn left and continue for 5 meters. Hot and Cool will be on your right.",
             "Girls-Hostel": "Start at Gate 5 and walk straight for 20 meters. Turn right and continue for another 20 meters. Take a left and walk for 80 meters. Turn right and walk for 10 meters. Turn left and continue for 10 meters. The Girls-Hostel will be ahead.",
             "Gate-4": "Start at Gate 5 and walk straight for 5 meters. Turn right and continue for 10 meters. Gate-4 will be on your right.",
             "Upahar": "Start at Gate 5 and walk straight for 10 meters. Take a left and continue for 10 meters. Upahar will be ahead."
@@ -193,7 +191,6 @@ function speakDirections(start, end) {
             "Sports-room": "Start at Gate 1 and walk straight for 5 meters. Turn right and continue for 30 meters. Turn left and walk for 5 meters. The Sports-room will be on your left.",
             "Playground": "Start at Gate 1 and walk straight for 5 meters. Turn right and continue for 30 meters. The Playground will be ahead.",
             "Canteen": "Start at Gate 1 and walk straight for 5 meters. Turn right and continue for 20 meters. Take a left and walk for another 20 meters. The Canteen will be ahead.",
-            "Hot and Cool": "Start at Gate 1 and walk straight for 5 meters. Turn right and continue for 20 meters. Take a left and walk for another 20 meters. Turn right and walk for 5 meters. Hot and Cool will be on your left.",
             "Upahar": "Start at Gate 1 and walk straight for 5 meters. Turn right and continue for 20 meters. Take a left and walk for another 20 meters. Turn right and walk for 5 meters. Turn right and walk straight for 70 meters. Turn right and walk for 5 meters, then turn left. Upahar will be on your right.",
             "Gate-5": "Start at Gate 1 and walk straight for 5 meters. Turn right and continue for 20 meters. Take a left and walk for another 20 meters. Turn right and walk for 5 meters. Turn right and walk straight for 70 meters. Turn right and walk for 5 meters, then turn left. Walk straight for 10 meters. Gate-5 will be ahead.",
             "Gate-4": "Start at Gate 1 and walk straight for 5 meters. Turn right and continue for 20 meters. Take a left and walk for another 20 meters. Turn right and walk for 5 meters. Turn right and walk straight for 70 meters. Turn right and walk for 5 meters, then turn left. Walk straight for 10 meters. Turn right and walk for 5 meters. Gate-4 will be on your right."
@@ -214,7 +211,6 @@ function speakDirections(start, end) {
             "Sports-room": "Start at Gate 2 and walk straight for 5 meters. Turn right and continue for 30 meters. Turn left and walk for 5 meters. The Sports-room will be on your left.",
             "Playground": "Start at Gate 2 and walk straight for 5 meters. Turn right and continue for 30 meters. The Playground will be ahead.",
             "Canteen": "Start at Gate 2 and walk straight for 5 meters. Turn right and continue for 20 meters. Take a left and walk for another 20 meters. The Canteen will be ahead.",
-            "Hot and Cool": "Start at Gate 2 and walk straight for 5 meters. Turn right and continue for 20 meters. Take a left and walk for another 20 meters. Turn right and walk for 5 meters. Hot and Cool will be on your left.",
             "Upahar": "Start at Gate 2 and walk straight for 5 meters. Turn right and continue for 20 meters. Take a left and walk for another 20 meters. Turn right and walk for 5 meters. Turn right and walk straight for 70 meters. Turn right and walk for 5 meters, then turn left. Upahar will be on your right.",
             "Gate-5": "Start at Gate 2 and walk straight for 5 meters. Turn right and continue for 20 meters. Take a left and walk for another 20 meters. Turn right and walk for 5 meters. Turn right and walk straight for 70 meters. Turn right and walk for 5 meters, then turn left. Walk straight for 10 meters. Gate-5 will be ahead.",
             "Gate-4": "Start at Gate 2 and walk straight for 5 meters. Turn right and continue for 20 meters. Take a left and walk for another 20 meters. Turn right and walk for 5 meters. Turn right and walk straight for 70 meters. Turn right and walk for 5 meters, then turn left. Walk straight for 10 meters. Turn right and walk for 5 meters. Gate-4 will be on your right."
@@ -235,7 +231,6 @@ function speakDirections(start, end) {
             "Boys-Hostel": "Start at Gate 3 and walk straight for 10 meters. Turn right and continue for 5 meters. Take a left and walk for another 20 meters. The Boys-Hostel will be on your left.",
             "Playground": "Start at Gate 3 and walk straight for 10 meters. Turn right. The Playground will be ahead.",
             "Canteen": "Start at Gate 3 and walk straight for 10 meters. Turn left and continue for another 20 meters. Take a right and walk for 20 meters. The Canteen will be ahead.",
-            "Hot and Cool": "Start at Gate 3 and walk straight for 10 meters. Turn left and continue for another 20 meters. Take a right and walk for 20 meters. Turn right and walk for 10 meters. Hot and Cool will be on your left.",
             "Upahar": "Start at Gate 3 and walk straight for 10 meters. Turn right and continue for 5 meters. Take a left and walk for another 20 meters. Turn right and walk for 30 meters. Take another right and walk for 5 meters. Finally, turn left and walk for 10 meters. Upahar will be on your right.",
             "Gate-5": "Start at Gate 3 and walk straight for 10 meters. Turn right and continue for 5 meters. Take a left and walk for another 20 meters. Turn right and walk for 30 meters. Take another right and walk for 5 meters. Finally, turn left and walk for 10 meters. Gate-5 will be ahead.",
             "Gate-4": "Start at Gate 3 and walk straight for 10 meters. Turn right and continue for 5 meters. Take a left and walk for another 20 meters. Turn right and walk for 30 meters. Take another right and walk for 5 meters. Finally, turn left and walk for 10 meters. Turn right and walk for 5 meters. Gate-4 will be on your right."
@@ -356,7 +351,6 @@ document.getElementById("find-route-btn").addEventListener("click", function () 
         "Gate-5_Gate-1":0.300,
         "Gate-5_Gate-2":0.300,
         "Gate-5_Playground":0.053,
-        "Gate-5_Hot and Cool":0.120,
         "Gate-5_Girls-Hostel":0.160,
         "Gate-5_Canteen":0.150,
         "Gate-5_Boys-Hostel":0.140,
@@ -375,7 +369,6 @@ document.getElementById("find-route-btn").addEventListener("click", function () 
         "Gate-4_Gate-1":0.310,
         "Gate-4_Gate-2":0.310,
         "Gate-4_Playground":0.095,
-        "Gate-4_Hot and Cool":0.125,
         "Gate-4_Girls-Hostel":0.165,
         "Gate-4_Canteen":0.155,
         "Gate-4_Boys-Hostel":0.170,
@@ -394,7 +387,6 @@ document.getElementById("find-route-btn").addEventListener("click", function () 
         "Gate-3_Gate-1":0.072,
         "Gate-3_Gate-2":0.055,
         "Gate-3_Playground":0.061,
-        "Gate-3_Hot and Cool":0.130,
         "Gate-3_Girls-Hostel":0.170,
         "Gate-3_Canteen":0.150,
         "Gate-3_Boys-Hostel":0.100,
@@ -413,7 +405,6 @@ document.getElementById("find-route-btn").addEventListener("click", function () 
         "Gate-2_Gate-1":0.17,
         "Gate-2_Gate-5":0.300,
         "Gate-2_Playground":0.110,
-        "Gate-2_Hot and Cool":0.200,
         "Gate-2_Girls-Hostel":0.230,
         "Gate-2_Canteen":0.210,
         "Gate-2_Boys-Hostel":0.150,
@@ -432,7 +423,6 @@ document.getElementById("find-route-btn").addEventListener("click", function () 
         "Gate-1_Gate-5":0.300,
         "Gate-1_Gate-2":0.017,
         "Gate-1_Playground":0.0120,
-        "Gate-1_Hot and Cool":0.210,
         "Gate-1_Girls-Hostel":0.250,
         "Gate-1_Canteen":0.220,
         "Gate-1_Boys-Hostel":0.150,
@@ -514,7 +504,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Autocomplete functionality remains the same
 const locations = [
     'A-BLOCK', 'B-BLOCK', 'C-BLOCK', 'D-BLOCK', 'Boys-Hostel',
-    'Canteen', 'Parking', 'Hot and Cool', 'Upahar', 'Girls-Hostel',
+    'Canteen', 'Parking',  'Upahar', 'Girls-Hostel',
     'Playground', 'Gate-5', 'Gate-3', 'Gate-2', 'Gate-1','Gate-4', 'Basketball_Court', 'Hut', 'Sports-Room'
 ];
 

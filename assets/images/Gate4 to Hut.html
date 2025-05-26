@@ -10,11 +10,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center; /* Center the content vertically */
+            justify-content: center;
             min-height: 100vh;
             margin: 0;
-            padding: 20px; /* Add padding to avoid edge touching */
+            padding: 20px;
             box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
         }
 
         header {
@@ -32,47 +34,66 @@
 
         #route-info {
             text-align: left;
-            margin-bottom: 20px; /* Adjusted margin for better spacing */
-            max-width: 90%; /* Make it responsive */
+            margin-bottom: 20px;
+            max-width: 90%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         #route-map img {
-            width: 100%; /* Ensure image is responsive */
-            max-width: 600px; /* Limit the max width for large screens */
+            width: 100%;
+            max-width: 600px;
             height: auto;
-            border-radius: 10px; /* Optional: Add rounded corners for style */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for effect */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         @media (min-width: 768px) {
             main {
-                flex-direction: row; /* Switch to row layout for larger screens */
+                flex-direction: row;
                 justify-content: space-between;
+                gap: 40px;
             }
 
             #route-info {
                 margin-right: 20px;
-                margin-bottom:160px;
-                max-width: 50%; /* Adjust the width for larger screens */
+                max-width: 50%;
+                margin-bottom: 0;
             }
         }
     </style>
 </head>
 <body>
     <header>
-
-        <h1> <u>Route to Hut</u></h1>
+        <h1><u>Route to Hut</u></h1>
     </header>
     <main>
         <div id="route-info">
-            <h2>Route from Gate-4  to Hut</h2>
-            <p><b>Hut:</b> The Hut is a cozy, rustic retreat on campus, offering a unique space for students and faculty to relax, unwind, and enjoy the outdoors. Surrounded by greenery and peaceful natural surroundings, the Hut provides a calm and informal setting away from the hustle and bustle of academic life. It’s the perfect spot to catch up with friends, study in a relaxed atmosphere, or simply enjoy a quiet moment in nature.</p>
+            <h2>Route from Gate-4 to Hut</h2>
+            <h3><b>Hut:</b></h3>
+            <ul>
+                <li>Start at Gate 4 and walk straight for 20 meters.</li>
+                <li>Turn right and continue for another 20 meters. </li>
+                <li>ake a left and walk for 20 meters, then turn right and walk for 30 meters.</li>
+                <li>Turn left and proceed for 60 meters.</li>
+                <li> Walk straight for 20 meters, take a right and continue for 35 meters.</li>
+                <li>The Hut will be ahead.</li>
+
+
+
+
+
+
+                </ul>
         </div>
+
         <div id="route-map">
-            <img src="Gate4 to Hut .png" alt="Route Map to Hut"> <!-- Adjusted alt text -->
+            <img src="Gate4 to Hut .png" alt="Route Map to B-Block">
         </div>
     </main>
+
     <script src="js/route.js"></script>
-    
 </body>
 </html>

@@ -10,11 +10,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center; /* Center the content vertically */
+            justify-content: center;
             min-height: 100vh;
             margin: 0;
-            padding: 20px; /* Add padding to avoid edge touching */
+            padding: 20px;
             box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
         }
 
         header {
@@ -32,48 +34,60 @@
 
         #route-info {
             text-align: left;
-            margin-bottom: 20px; /* Adjusted margin for better spacing */
-            max-width: 90%; /* Make it responsive */
+            margin-bottom: 20px;
+            max-width: 90%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         #route-map img {
-            width: 100%; /* Ensure image is responsive */
-            max-width: 600px; /* Limit the max width for large screens */
+            width: 100%;
+            max-width: 600px;
             height: auto;
-            border-radius: 10px; /* Optional: Add rounded corners for style */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for effect */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         @media (min-width: 768px) {
             main {
-                flex-direction: row; /* Switch to row layout for larger screens */
+                flex-direction: row;
                 justify-content: space-between;
+                gap: 40px;
             }
 
             #route-info {
                 margin-right: 20px;
-                margin-bottom:160px;
-                max-width: 50%; /* Adjust the width for larger screens */
+                max-width: 50%;
+                margin-bottom: 0;
             }
         }
     </style>
 </head>
 <body>
     <header>
-
-        <h1> <u>Route to Gate-4</u></h1>
+        <h1><u>Route to Gate-4</u></h1>
     </header>
     <main>
         <div id="route-info">
-            <h2>Route from Gate-2  to Gate-4</h2>
-            <p><b>Gate 2 to Gate 4:</b> The pathway connecting Gate 2 to Gate 4 is a well-designed, scenic route that enhances the experience of moving across campus. Lined with lush greenery and shaded by trees, this walkway provides a pleasant, serene environment for students and faculty as they travel between buildings.</p>
-            <p>Along the route, benches and seating areas are thoughtfully placed, offering spots to relax or study outdoors. The pathway is well-lit for safe travel at night and includes directional signs and markers for convenience. This connection between Gate 2 and Gate 4 not only facilitates movement but also contributes to the campus's aesthetic appeal, creating an inviting and peaceful atmosphere that encourages both relaxation and interaction.</p>
-          </div>
+            <h2>Route from Gate-2 to Gate-4</h2>
+            <p><b>Gate 2 to Gate 4:</b></p>
+            <ul>
+                <li>Start at Gate 2 and walk straight for 5 meters.</li> 
+                <li>Turn right and continue for 20 meters.</li> 
+                <li>Take a left and walk for another 20 meters.</li>  
+                <li>Turn right and walk for 5 meters.</li>  
+                <li>Turn right and walk straight for 70 meters.</li>  
+                <li>Turn right and walk for 5 meters, then turn left.</li> 
+                <li>Walk straight for 10 meters. Turn right and walk for 5 meters.</li> 
+                <li>Gate-4 will be on your right.</li>
+            </ul>
+        </div>
         <div id="route-map">
-            <img src="Gate2 to Gate4 .png" alt="Route Map to Gate-4"> <!-- Adjusted alt text -->
+            <img src="Gate2 to Gate4 .png" alt="Route Map to Gate-4">
         </div>
     </main>
     <script src="js/route.js"></script>
-    
 </body>
 </html>

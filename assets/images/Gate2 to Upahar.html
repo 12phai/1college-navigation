@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route to Upahar</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
+   <style>
         body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center; /* Center the content vertically */
+            justify-content: center;
             min-height: 100vh;
             margin: 0;
-            padding: 20px; /* Add padding to avoid edge touching */
+            padding: 20px;
             box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
         }
 
         header {
@@ -32,28 +34,33 @@
 
         #route-info {
             text-align: left;
-            margin-bottom: 20px; /* Adjusted margin for better spacing */
-            max-width: 90%; /* Make it responsive */
+            margin-bottom: 20px;
+            max-width: 90%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         #route-map img {
-            width: 100%; /* Ensure image is responsive */
-            max-width: 600px; /* Limit the max width for large screens */
+            width: 100%;
+            max-width: 600px;
             height: auto;
-            border-radius: 10px; /* Optional: Add rounded corners for style */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for effect */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         @media (min-width: 768px) {
             main {
-                flex-direction: row; /* Switch to row layout for larger screens */
+                flex-direction: row;
                 justify-content: space-between;
+                gap: 40px;
             }
 
             #route-info {
                 margin-right: 20px;
-                margin-bottom:160px;
-                max-width: 50%; /* Adjust the width for larger screens */
+                max-width: 50%;
+                margin-bottom: 0;
             }
         }
     </style>
@@ -66,12 +73,18 @@
     <main>
         <div id="route-info">
             <h2>Route from Gate-2  to Upahar</h2>
-            <p><b>Upahar:</b> Upahar is a cozy and vibrant food corner on campus, offering a wide range of fresh, tasty, and affordable snacks and meals to keep you energized throughout the day. Whether you're craving a quick snack between classes or looking for a full meal, Upahar provides a variety of options to satisfy your hunger. The menu includes healthy salads, sandwiches, wraps, local delicacies, and a variety of beverages such as fresh juices, coffee, and tea.</p>
-
-                <p>Designed with a warm and inviting atmosphere, Upahar is the perfect place for students and faculty to take a break, socialize, or catch up on work in a relaxed setting. With clean, comfortable seating and friendly service, it's not just about food – it's a space to connect with friends, enjoy a moment of relaxation, and recharge before heading back to your academic activities.</p>
-             </div>
+            <p><b>Upahar:</b> </p>
+            <ul>
+                <li>Start at Gate 2 and walk straight for 5 meters.</li>
+                <li>Turn right and continue for 20 meters.</li>
+                <li>Take a left and walk for another 20 meters.</li> 
+                <li>Turn right and walk for 5 meters.</li>
+                <li>Turn right and walk straight for 70 meters.</li>
+                <li>Turn right and walk for 5 meters, then turn left. Upahar will be on your right.</li>
+            </ul>
+        </div>
         <div id="route-map">
-            <img src="Gate2 to Upahar .png" alt="Route Map to  Upahar"> <!-- Adjusted alt text -->
+            <img src="Gate2 to Upahar .png" alt="Route Map to Sports-Room"> <!-- Adjusted alt text -->
         </div>
     </main>
     <script src="js/route.js"></script>

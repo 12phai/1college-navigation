@@ -10,11 +10,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center; /* Center the content vertically */
+            justify-content: center;
             min-height: 100vh;
             margin: 0;
-            padding: 20px; /* Add padding to avoid edge touching */
+            padding: 20px;
             box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
         }
 
         header {
@@ -32,48 +34,63 @@
 
         #route-info {
             text-align: left;
-            margin-bottom: 20px; /* Adjusted margin for better spacing */
-            max-width: 90%; /* Make it responsive */
+            margin-bottom: 20px;
+            max-width: 90%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         #route-map img {
-            width: 100%; /* Ensure image is responsive */
-            max-width: 600px; /* Limit the max width for large screens */
+            width: 100%;
+            max-width: 600px;
             height: auto;
-            border-radius: 10px; /* Optional: Add rounded corners for style */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for effect */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         @media (min-width: 768px) {
             main {
-                flex-direction: row; /* Switch to row layout for larger screens */
+                flex-direction: row;
                 justify-content: space-between;
+                gap: 40px;
             }
 
             #route-info {
                 margin-right: 20px;
-                margin-bottom:160px;
-                max-width: 50%; /* Adjust the width for larger screens */
+                max-width: 50%;
+                margin-bottom: 0;
             }
         }
     </style>
 </head>
 <body>
     <header>
-
-        <h1> <u>Route to Girls-Hostel</u></h1>
+        <h1><u>Route to Girls-Hostel</u></h1>
     </header>
     <main>
         <div id="route-info">
-            <h2>Route from Gate-5  to Girls-Hostel</h2>
-            <p><b>Girl's Hostel:</b> The Girls' Hostel is a secure, comfortable, and homely space designed to provide a safe and supportive living environment for female students. It offers well-furnished rooms with a choice of single, double, or triple occupancy, each equipped with essential amenities such as comfortable beds, study tables, wardrobes, and ample lighting. The rooms are designed to foster both academic focus and relaxation, ensuring a balanced lifestyle.</p>
-            <p>Safety is a top priority, with round-the-clock security, CCTV surveillance, and an access control system to ensure the well-being of all residents. Hostel wardens and support staff are present to assist students and ensure smooth day-to-day functioning. The Girls' Hostel also promotes a community-oriented environment, where students can build lasting friendships, engage in activities, and create a sense of belonging during their time at college.</p> 
-     </div>
+            <h2>Route from Gate-5 to Girls-Hostel</h2>
+            <h3><b>Girls-Hostel:</b></h3>
+            <ul>
+                <li>Start at Gate 5 and walk straight for 20 meters.</li>
+                <li>Turn right and continue for another 20 meters. </li>
+                <li>Take a left and walk for 80 meters.</li>
+                <li> Turn right and walk for 10 meters. Turn left and continue for 10 meters.</li>
+                <li>The Girls-Hostel will be ahead.</li>
+
+
+
+
+                </ul>
+        </div>
+
         <div id="route-map">
-            <img src="Gate5 to Girls-Hostel.png" alt="Route Map to Gate-5 Girls-Hostel"> <!-- Adjusted alt text -->
+            <img src="Gate5 to Girls-Hostel.png" alt="Route Map to B-Block">
         </div>
     </main>
+
     <script src="js/route.js"></script>
-    
 </body>
 </html>
