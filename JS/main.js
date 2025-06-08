@@ -31,10 +31,10 @@ document.getElementById('find-route-btn').addEventListener('click', function () 
             }
         }  else if (startLocation === "Gate-3") {
             switch (endLocation) {
-                case 'A-BLOCK': routePage = 'assets/images/Gate3 to A-Block.html'; break;
-                case 'B-BLOCK': routePage = 'assets/images/Gate3 to B-Block.html'; break;
-                case 'C-BLOCK': routePage = 'assets/images/Gate3 to C-Block.html'; break;
-                case 'D-BLOCK': routePage = 'assets/images/Gate3 to D-Block.html'; break;
+                case 'A-BLOCK': routePage = 'assets/images/Gate3 to A-BLOCK.html'; break;
+                case 'B-BLOCK': routePage = 'assets/images/Gate3 to B-BLOCK.html'; break;
+                case 'C-BLOCK': routePage = 'assets/images/Gate3 to C-BLOCK.html'; break;
+                case 'D-BLOCK': routePage = 'assets/images/Gate3 to D-BLOCK.html'; break;
                 case 'Basketball_Court': routePage = 'assets/images/Gate3 to Basketball Court.html'; break;
                 case 'Boys-Hostel': routePage = 'assets/images/Gate3 to Boys Hostel.html'; break;
                 case 'Canteen': routePage = 'assets/images/Gate3 to Canteen.html'; break;
