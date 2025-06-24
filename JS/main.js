@@ -262,52 +262,6 @@ function speakDirections(start, end) {
 
 
 
-function getNearestGate() {
-    // Check if the alert has already been shown during the current session
-    if (sessionStorage.getItem("nearestGateAlertShown")) {
-        return;  // Exit if the alert was already shown
-    }
-
-    if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition((position) => {
-            let lat = position.coords.latitude;
-            let lon = position.coords.longitude;
-
-            // Approximate fixed coordinates of entry gates
-            let gates = {
-                "Gate-3": { lat: 13.0187, lon: 77.5089 },
-                "Gate-5": { lat: 13.0199, lon: 77.50963 },
-                "Gate-1": { lat: 13.01815, lon: 77.50852 },
-                "Gate-2": { lat: 13.0183, lon: 77.5086 },
-                "Gate-4": { lat: 13.01990, lon: 77.50880 }
-            };
-
-            let nearestGate = Object.keys(gates).reduce((a, b) => {
-                let distA = Math.hypot(lat - gates[a].lat, lon - gates[a].lon);
-                let distB = Math.hypot(lat - gates[b].lat, lon - gates[b].lon);
-                return distA < distB ? a : b;
-            });
-
-            // Display the nearest gate only once per session
-            alert(`Your nearest entry gate is Gate-2`);
-            document.getElementById("start-input").value = nearestGate;
-
-            // Set flag in sessionStorage
-            sessionStorage.setItem("nearestGateAlertShown", "true");
-
-        }, () => {
-            alert("Unable to retrieve location. Please enable GPS.");
-        });
-    } else {
-        alert("Geolocation is not supported by your browser.");
-    }
-}
-
-// Call this function automatically when the page loads
-document.addEventListener("DOMContentLoaded", getNearestGate);
-
-
-
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
