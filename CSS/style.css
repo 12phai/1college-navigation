@@ -30,6 +30,7 @@ img {
     border-radius: 10px;
 }
 
+
 #start-end-points {
     position: absolute;
     top: 20px;
@@ -69,6 +70,13 @@ img {
     width: 100%;
     margin-top: 10px;
 }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #4328da;
+}
+/* Add more dark mode styles as needed */
+
 
 #find-route-btn:hover {
     background-color: #27ae60;
